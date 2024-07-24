@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Source+Serif+4:opsz,wght@8..60,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    line-height: 1.4;
+    font-weight: 400px;
+    font-family: 'Baloo Bhai 2', sans-serif;
+}
+
+/* navigation styling start here  */
+nav{
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+    position: sticky;
+    top: 0;
+    background-color: white;
+    margin-bottom: 32px;
+    padding: 10px;
+    z-index: 50;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}   
+.bar-icon{
+    font-size: 30px;
+}
+
+/* hero section styling start form here */
+
+.hero{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-tag{
+    background-color: green;
+    color: whitesmoke;
+    padding: 5px 10px;
+    align-self: flex-start;
+}
+
+.hero-content h1{
+    font-size: 40px;
+    font-weight: 400px;
+    line-height: 1.2;
+}
+
+button{
+    padding: 10px 20px;
+    border: none;
+    transition: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}
+button:hover{
+    opacity: 0.8;
+    transition: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}
+
+.explore-btn{
+    background-color: #ffc066;
+    align-self: flex-start  ;
+    font-style: italic;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 15px;
+}
+
+.features{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.feature{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    transition: 0.2s ease-in-out;
+}
+.feature img{
+    width: 72px;
+}
+.feature:hover{
+    transition: 0.2s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.06);
+}
+
+.divider{
+    border: 1px solid grey;
+    margin: 20px 0;
+}
+
+/* menue section styling */
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 50px auto;
+    align-items: center;
+}
+.menu .hero-tag{
+    align-self: center;
+}
+
+.grid{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "I1 I1 I2 I3"
+    "I1 I1 I2 I7"
+    "I4 I5 I6 I7";
+}
+.grid-imge{
+    border-radius:10px;
+    transition: 0.2s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+.grid-imge:hover{
+    transition: 0.2s ease-in-out;
+    transform: scale(1.02);
+}
+.item1{
+    grid-area: I1;
+}
+.item2{
+    grid-area: I2;
+}
+.item3{
+    grid-area: I3;
+}
+.item4{
+    grid-area: I4;
+}
+.item5{
+    grid-area: I5;
+}
+.item6{
+    grid-area: I6;
+}
+.item7{
+    grid-area: I7;
+}
+
+footer{
+    background-color: #fff0db;
+}
+.footer-container{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.link-list h3{
+margin-bottom: 10px;
+color: grey;
+}
+
+.link-list ul{
+    list-style: none;
+}
+.link-list ul li {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.news-letter h3{
+margin-bottom: 10px;
+color: grey;
+}
+.news-letter input{
+    padding: 8px 10px;
+    margin-bottom: 10px;
+}
+@media (max-width: 786px){
+    .hero{
+        flex-direction:column ;
+        justify-content: center;
+    }
+    .hero-img{
+        display: flex;
+        justify-content: center;
+    }
+    .hero-img img{
+        width: 80%;
+    }
+    .hero-content{
+        gap: 10px;
+        padding: 10px;
+    }
+    .hero-content h1{
+        font-size: 32px;
+        line-height: 1.2;
+    }
+    .features{
+        flex-direction:column ;
+    }
+    .feature{
+        flex-direction: column;
+    }
+    .grid{
+        border-radius: 10px;
+    }
+    .grid-imge{
+        border-radius: 0px;
+    }
+}
